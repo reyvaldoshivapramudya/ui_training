@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_training/food.dart';
-import 'package:ui_training/detail_screen.dart'; // ⬅️ tambah import
+import 'package:ui_training/detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         ),
         child: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
@@ -63,6 +63,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
 class _FoodCard extends StatelessWidget {
   final Food food;
 
